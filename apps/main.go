@@ -14,7 +14,7 @@ func main() {
 	}
 
 	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
-		fmt.Fprint(w, "hello from AWS CI/CD pipeline - mrofisr")
+		fmt.Fprint(w, "Hello World!")
 	})
 
 	// Health check endpoint for ECS
