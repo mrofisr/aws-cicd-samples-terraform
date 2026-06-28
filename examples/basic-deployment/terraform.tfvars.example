@@ -1,0 +1,21 @@
+aws_region = "ap-southeast-3"
+
+app_name    = "my-app"
+environment = "dev"
+
+vpc_cidr             = "10.0.0.0/16"
+public_subnet_cidrs  = ["10.0.1.0/24", "10.0.2.0/24"]
+private_subnet_cidrs = ["10.0.10.0/24", "10.0.20.0/24"]
+single_nat_gateway   = true
+
+container_image   = "public.ecr.aws/docker/library/nginx:latest"
+container_port    = 8080
+health_check_path = "/health"
+task_cpu          = "256"
+task_memory       = "512"
+desired_count     = 1
+
+codestar_connection_arn = "arn:aws:codeconnections:ap-southeast-3:783764617931789012:connection/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"
+repo_owner              = "your-github-username"
+repo_name               = "your-app-repository"
+repo_branch             = "main"

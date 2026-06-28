@@ -1,0 +1,82 @@
+module.ecr.aws_ecr_repository.this: Refreshing state... [id=cicd-demo-dev]
+module.vpc.data.aws_availability_zones.available: Reading...
+module.codebuild.aws_cloudwatch_log_group.this: Refreshing state... [id=/aws/codebuild/cicd-demo-dev]
+module.codepipeline.data.aws_partition.current: Reading...
+data.aws_caller_identity.current: Reading...
+module.codebuild.data.aws_partition.current: Reading...
+module.codebuild.data.aws_iam_policy_document.codebuild_assume_role[0]: Reading...
+module.codepipeline.data.aws_region.current: Reading...
+data.aws_region.current: Reading...
+module.vpc.aws_vpc.this: Refreshing state... [id=vpc-096e273ca725776d2]
+module.codepipeline.data.aws_partition.current: Read complete after 0s [id=aws]
+data.aws_region.current: Read complete after 0s [id=ap-southeast-1]
+module.codepipeline.data.aws_region.current: Read complete after 0s [id=ap-southeast-1]
+module.codebuild.data.aws_partition.current: Read complete after 0s [id=aws]
+module.codebuild.data.aws_caller_identity.current: Reading...
+module.codebuild.data.aws_region.current: Reading...
+module.codepipeline.data.aws_caller_identity.current: Reading...
+module.codebuild.data.aws_iam_policy_document.codebuild_assume_role[0]: Read complete after 0s [id=1440949301]
+module.codebuild.data.aws_region.current: Read complete after 0s [id=ap-southeast-1]
+module.codepipeline.data.aws_iam_policy_document.assume_role: Reading...
+data.aws_caller_identity.current: Read complete after 0s [id=123456]
+module.codepipeline.data.aws_iam_policy_document.assume_role: Read complete after 0s [id=29843616]
+module.codebuild.data.aws_caller_identity.current: Read complete after 0s [id=123456]
+module.codebuild.aws_iam_role.codebuild[0]: Refreshing state... [id=cicd-demo-dev-codebuild]
+module.codepipeline.data.aws_caller_identity.current: Read complete after 0s [id=123456]
+module.codepipeline.aws_s3_bucket.this: Refreshing state... [id=cicd-demo-dev-artifacts-ap-southeast-1-123456]
+module.codepipeline.aws_iam_role.this: Refreshing state... [id=cicd-demo-dev-codepipeline]
+module.vpc.data.aws_availability_zones.available: Read complete after 0s [id=ap-southeast-1]
+module.ecr.aws_ecr_lifecycle_policy.this[0]: Refreshing state... [id=cicd-demo-dev]
+module.vpc.aws_route_table.private["10.0.10.0/24"]: Refreshing state... [id=rtb-08489ea8975a3d6fc]
+module.vpc.aws_subnet.private["10.0.10.0/24"]: Refreshing state... [id=subnet-0b73c506ee142c34a]
+module.vpc.aws_subnet.private["10.0.11.0/24"]: Refreshing state... [id=subnet-097576988a8989562]
+module.vpc.aws_subnet.public["10.0.0.0/24"]: Refreshing state... [id=subnet-079bc137b1d05e054]
+module.vpc.aws_internet_gateway.this: Refreshing state... [id=igw-0c55b0afbae55a1a9]
+module.vpc.aws_subnet.public["10.0.1.0/24"]: Refreshing state... [id=subnet-0d1b6ae8c20b013f9]
+module.vpc.aws_route_table.private["10.0.11.0/24"]: Refreshing state... [id=rtb-0427413f79730f551]
+module.vpc.aws_route_table.public: Refreshing state... [id=rtb-00a6f416f449c4016]
+module.codepipeline.aws_s3_bucket_server_side_encryption_configuration.this: Refreshing state... [id=cicd-demo-dev-artifacts-ap-southeast-1-123456]
+module.codepipeline.aws_s3_bucket_versioning.this: Refreshing state... [id=cicd-demo-dev-artifacts-ap-southeast-1-123456]
+module.codepipeline.aws_s3_bucket_public_access_block.this: Refreshing state... [id=cicd-demo-dev-artifacts-ap-southeast-1-123456]
+module.alb.aws_security_group.alb: Refreshing state... [id=sg-014f4f0a65621189c]
+module.codebuild_sg.aws_security_group.this: Refreshing state... [id=sg-06b3bcd97d4c7f525]
+module.alb.aws_lb_target_group.this: Refreshing state... [id=arn:aws:elasticloadbalancing:ap-southeast-1:123456:targetgroup/cicd-demo-dev-tg/203e0bc69986f886]
+module.vpc.aws_route_table_association.private["10.0.10.0/24"]: Refreshing state... [id=rtbassoc-04d21834583ada541]
+module.codebuild.data.aws_iam_policy_document.codebuild_permissions[0]: Reading...
+module.codebuild.data.aws_iam_policy_document.codebuild_permissions[0]: Read complete after 0s [id=3543259379]
+module.vpc.aws_route_table_association.private["10.0.11.0/24"]: Refreshing state... [id=rtbassoc-082cd8b44fcaafef4]
+module.vpc.aws_eip.nat["10.0.0.0/24"]: Refreshing state... [id=eipalloc-0e87d0e52fa9d3086]
+module.vpc.aws_route_table_association.public["10.0.0.0/24"]: Refreshing state... [id=rtbassoc-0a5fc97b5a314adff]
+module.vpc.aws_route_table_association.public["10.0.1.0/24"]: Refreshing state... [id=rtbassoc-05898d896208e8269]
+module.vpc.aws_route.public_internet: Refreshing state... [id=r-rtb-00a6f416f449c40161080289494]
+module.alb.aws_lb.this: Refreshing state... [id=arn:aws:elasticloadbalancing:ap-southeast-1:123456:loadbalancer/app/cicd-demo-dev/2303911d5b295136]
+module.ecs_tasks_sg.aws_security_group.this: Refreshing state... [id=sg-08dcf9f5846add4b5]
+module.vpc.aws_nat_gateway.this["10.0.0.0/24"]: Refreshing state... [id=nat-0b561ef41cdc08cc9]
+module.vpc.aws_route.private_nat["10.0.11.0/24"]: Refreshing state... [id=r-rtb-0427413f79730f5511080289494]
+module.vpc.aws_route.private_nat["10.0.10.0/24"]: Refreshing state... [id=r-rtb-08489ea8975a3d6fc1080289494]
+module.alb.aws_lb_listener.http: Refreshing state... [id=arn:aws:elasticloadbalancing:ap-southeast-1:123456:listener/app/cicd-demo-dev/2303911d5b295136/0d20b85e7bb00a03]
+module.ecs.data.aws_iam_policy_document.ecs_assume_role: Reading...
+module.ecs.data.aws_iam_policy_document.ecs_assume_role: Read complete after 0s [id=2282462418]
+module.ecs.data.aws_region.current: Reading...
+module.ecs.aws_ecs_cluster.this: Refreshing state... [id=arn:aws:ecs:ap-southeast-1:123456:cluster/cicd-demo-dev]
+module.ecs.aws_cloudwatch_log_group.this: Refreshing state... [id=/ecs/cicd-demo-dev/cicd-demo-dev-app]
+module.ecs.data.aws_region.current: Read complete after 0s [id=ap-southeast-1]
+module.ecs.aws_iam_role.ecs_execution: Refreshing state... [id=cicd-demo-dev-ecs-execution]
+module.ecs.aws_iam_role.ecs_task: Refreshing state... [id=cicd-demo-dev-ecs-task]
+module.ecs.data.aws_iam_policy_document.ecs_execution_inline: Reading...
+module.ecs.data.aws_iam_policy_document.ecs_execution_inline: Read complete after 0s [id=1650678088]
+module.codebuild.aws_iam_role_policy.codebuild[0]: Refreshing state... [id=cicd-demo-dev-codebuild:cicd-demo-dev-codebuild]
+module.codebuild.aws_codebuild_project.this: Refreshing state... [id=arn:aws:codebuild:ap-southeast-1:123456:project/cicd-demo-dev]
+module.codepipeline.data.aws_iam_policy_document.this: Reading...
+module.codepipeline.data.aws_iam_policy_document.this: Read complete after 0s [id=2019382075]
+module.codepipeline.aws_iam_role_policy.this: Refreshing state... [id=cicd-demo-dev-codepipeline:cicd-demo-dev-codepipeline]
+module.ecs.aws_iam_role_policy_attachment.ecs_execution_managed: Refreshing state... [id=cicd-demo-dev-ecs-execution/arn:aws:iam::aws:policy/service-role/AmazonECSTaskExecutionRolePolicy]
+module.ecs.aws_iam_role_policy.ecs_execution_inline: Refreshing state... [id=cicd-demo-dev-ecs-execution:cicd-demo-dev-ecs-execution-inline]
+module.ecs.aws_ecs_task_definition.this: Refreshing state... [id=cicd-demo-dev-cicd-demo-dev-app]
+module.ecs.aws_ecs_service.this: Refreshing state... [id=arn:aws:ecs:ap-southeast-1:123456:service/cicd-demo-dev/cicd-demo-dev-cicd-demo-dev-app]
+module.codepipeline.aws_codepipeline.this: Refreshing state... [id=cicd-demo-dev]
+
+No changes. Your infrastructure matches the configuration.
+
+Terraform has compared your real infrastructure against your configuration
+and found no differences, so no changes are needed.

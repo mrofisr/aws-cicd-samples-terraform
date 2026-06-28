@@ -1,0 +1,9 @@
+.git
+.gitignore
+*.md
+.DS_Store
+__pycache__
+.env
+.vscode
+.idea
+.terraform
